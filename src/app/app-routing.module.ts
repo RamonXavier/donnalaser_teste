@@ -3,8 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [];
 
+const appRoutes: Routes = [
+	{
+		path: '**',
+		loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+	},
+]
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
