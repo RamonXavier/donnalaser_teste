@@ -87,3 +87,9 @@ a .iconesSociais {
   align-items: center;
   align-content: center;
 }
+
+@media only screen and (max-width: 550px) {
+  .rowTextoSolto{
+    display: none;
+  }
+}
