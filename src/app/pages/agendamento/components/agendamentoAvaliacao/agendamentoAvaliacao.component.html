@@ -47,6 +47,20 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-7 mb-3">
+              <ngb-datepicker
+              [displayMonths]="displayMonths"
+              [navigation]="navigation"
+              [showWeekNumbers]="showWeekNumbers"
+              [outsideDays]="outsideDays"/>
+            </div>
+            <div class="col-5" style="max-height: 260px; overflow-y: auto;">
+              <div *ngFor="let teamSale of exemplos" class="pb-2">
+                <span>Horário: <b>{{teamSale.name}}</b> - {{teamSale.population}}</span>
+              </div>
+            </div>
+          </div>
           <button type="submit" class="btn btn-outline-secondary login-btn w-100 mb-3">Ir para agendamentos</button>
           <app-sociaisFooter></app-sociaisFooter>
         </form>
