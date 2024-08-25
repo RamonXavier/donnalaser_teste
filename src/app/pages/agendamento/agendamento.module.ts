@@ -6,6 +6,7 @@ import { FormsModule } from "@angular/forms";
 import { AgendamentoSessaoComponent } from "./components/agendamentoSessao/agendamentoSessao.component";
 import { RecuperarCodigoComponent } from "./components/recuperarCodigo/recuperarCodigo.component";
 import { AgendamentoAvaliacaoComponent } from "./components/agendamentoAvaliacao/agendamentoAvaliacao.component";
+import { SociaisFooterModule } from "../shared/components/sociaisFooter/sociaisFooter.module";
 
 // routing
 const routes: Routes = [
@@ -28,11 +29,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LoginComponent, AgendamentoSessaoComponent, AgendamentoAvaliacaoComponent],
+  declarations: [LoginComponent, AgendamentoSessaoComponent, AgendamentoAvaliacaoComponent, RecuperarCodigoComponent],
   imports: [
     CommonModule,
     FormsModule,
     RouterModule.forChild(routes),
+    SociaisFooterModule
   ],
   providers: [],
 })

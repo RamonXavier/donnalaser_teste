@@ -37,36 +37,8 @@
             </div>
           </div>
           <button type="submit" class="btn btn-outline-secondary login-btn w-100 mb-3">Ir para agendamentos</button>
-          <div class="social-login mb-3 type--A">
-            <h5 class="text-center mb-3">Redes sociais</h5>
-            <div class="row divIconesSociais">
-              <div class="col-8 row">
-                <div class="col d-flex justify-content-center">
-                  <a href="https://www.instagram.com/donnalaser" target="_blank" rel="noopener noreferrer">
-                    <span class="iconesSociais mr-4">
-                      <i class="fa-brands fa-instagram iconeInstagram" style="color: #8c58a0;"></i>
-                    </span>
-                  </a>
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <a href="https://www.facebook.com/donnalaser.depilacao/" target="_blank" rel="noopener noreferrer">
-                    <span class="iconesSociais mr-4">
-                      <i class="fa-brands fa-facebook" style="color: #1a73e8;"></i>
-                    </span>
-                  </a>
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <a href="https://api.whatsapp.com/send?phone=554832481234&text=Ol%C3%A1%2C%20acessei%20o%20site%20e%20gostaria%20de%20ajuda%20para%20realizar%20agendamentos" target="_blank" rel="noopener noreferrer">
-                    <span class="iconesSociais">
-                      <i class="fa-brands fa-whatsapp" style="color: #4caf50;"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <app-sociaisFooter [habilitarWhatsapp]="true" [habilitarFacebook]="true" [habilitarInstagram]="true"></app-sociaisFooter>
         </form>
-
         <p class="text-center register-test mt-3">
           <a href="/agendamentoAvaliacao" class="text-decoration-none">Aindão não é cliente? <b>Agende uma avaliação</b></a>
         </p>
