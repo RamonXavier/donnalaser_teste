@@ -1,2 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/pages/agendamento/components/login/login.component.scss';
+
+.iconeInstagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(17, 12, 34);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+.form-2-wrapper {
+  background: rgb(255 255 255);
+  padding: 50px;
+  border-radius: 8px;
+  -webkit-backdrop-filter: var(--backdrop-filter, none);
+  border: var(--container-corvid-border-width, var(--brw, 1px)) solid var(--container-corvid-border-color, rgba(var(--brd, var(--color_15, color_15)), var(--alpha-brd, 1)));
+  border-radius: var(--rd, 5px);
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+}
