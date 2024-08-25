@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AgendamentoModule } from './pages/agendamento/agendamento.module';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     AgendamentoModule,
     RouterModule.forRoot([]),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

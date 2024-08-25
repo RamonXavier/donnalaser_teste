@@ -1,0 +1,76 @@
+input.form-control{
+  padding: 11px;
+  border: none;
+  border: 2px solid #405c7cb8;
+  border-radius: 5px;
+  height: 45px;
+  background-color: transparent;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+input.form-control:focus{
+  box-shadow: none !important;
+  outline: 0px !important;
+  background-color: transparent;
+}
+button.login-btn{
+  background: #d5a496;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+button.login-btn:hover{
+  background: #8f5f52;;
+  color: white;
+  font-weight: bolder;
+}
+
+.register-test a{
+  color: #000;
+}
+.social-login button{
+  border-radius: 30px;
+}
+
+.textoSolto{
+  font-family: 'Montserrat';
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.textoSoltoSub {
+  color: #d5a496;
+}
+
+.logoReduzida {
+  vertical-align: middle;
+  border-style: none;
+  margin-top: 400px;
+  position: fixed;
+}
+
+.rowTextoSolto {
+  margin-top: -250px;
+}
+
+.iconesSociais {
+  font-size: 50px;
+}
+
+a .iconesSociais {
+  color: #333333;
+}
+
+.divIconesSociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .rowTextoSolto{
+    display: none;
+  }
+}

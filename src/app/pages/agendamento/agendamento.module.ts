@@ -5,12 +5,17 @@ import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { AgendamentoSessaoComponent } from "./components/agendamentoSessao/agendamentoSessao.component";
 import { RecuperarCodigoComponent } from "./components/recuperarCodigo/recuperarCodigo.component";
+import { AgendamentoAvaliacaoComponent } from "./components/agendamentoAvaliacao/agendamentoAvaliacao.component";
 
 // routing
 const routes: Routes = [
   {
     path: 'agendamentoSessao',
     component: AgendamentoSessaoComponent,
+  },
+  {
+    path: 'agendamentoAvaliacao',
+    component: AgendamentoAvaliacaoComponent,
   },
   {
     path: 'recuperarCodigo',
@@ -23,7 +28,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LoginComponent, AgendamentoSessaoComponent],
+  declarations: [LoginComponent, AgendamentoSessaoComponent, AgendamentoAvaliacaoComponent],
   imports: [
     CommonModule,
     FormsModule,
