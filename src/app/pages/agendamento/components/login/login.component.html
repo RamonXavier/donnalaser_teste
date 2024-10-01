@@ -1,5 +1,5 @@
 <div class="">
-  <div class="row rowTextoSolto">
+  <!-- <div class="row rowTextoSolto">
     <div class="col-8 p-5">
       <span class="textoSolto">
         Criamos um modo de agendamento especialmente
@@ -16,7 +16,7 @@
       fetchpriority="high"
       class="logoReduzida">
     </div>
-  </div>
+  </div> -->
   <div class="row">
     <div class="col-12 d-flex align-items-center justify-content-center p-0">
       <div class="form-2-wrapper">
@@ -29,14 +29,22 @@
             <input type="email" class="form-control" id="email" name="email" placeholder="CPF" required>
           </div>
           <div class="mb-3">
-            <input type="password" class="form-control" id="password" name="password" placeholder="Código Donna Laser" required>
+            <div class="verification-container">
+              <h4>Entre com seu código único:</h4>
+              <div class="vcode" id="vcode">
+                <input type="text" class="vcode-input" autocomplete="off" maxlength="1"name="codigo_1" [(ngModel)]="vcode[0]" (keyup)="processInput($event, 0)" autofocus>
+                <input type="text" class="vcode-input" autocomplete="off" maxlength="1"name="codigo_2" [(ngModel)]="vcode[1]" (keyup)="processInput($event, 1)">
+                <input type="text" class="vcode-input" autocomplete="off" maxlength="1"name="codigo_3" [(ngModel)]="vcode[2]" (keyup)="processInput($event, 2)">
+                <input type="text" class="vcode-input" autocomplete="off" maxlength="1"name="codigo_4" [(ngModel)]="vcode[3]" (keyup)="processInput($event, 3)">
+              </div>
+            </div>
           </div>
           <div class="mb-3">
             <div class="form-check pl-0">
-              <a href="/recuperarCodigo" class="text-decoration-none float-start">Perdi meu código pessoal</a>
+              <a href="/recuperarCodigo" class="text-decoration-none float-start">Perdi meu código único</a>
             </div>
           </div>
-          <button type="submit" class="btn btn-outline-secondary login-btn w-100 mb-3">Ir para agendamentos</button>
+          <button type="submit" [routerLink]="'/agendamentoSessao'" class="btn btn-outline-secondary login-btn w-100 mb-3">Ir para agendamentos</button>
           <app-sociaisFooter [habilitarWhatsapp]="true" [habilitarFacebook]="true" [habilitarInstagram]="true"></app-sociaisFooter>
         </form>
         <p class="text-center register-test mt-3">

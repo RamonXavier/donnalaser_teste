@@ -31,3 +31,35 @@ body{
   border-radius: var(--rd, 5px);
   box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
 }
+
+@media only screen and (max-width: 550px) {
+  .ngb-dp-day {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+
+  .ngb-dp-day > div {
+    width: 3rem !important;
+    height: 3rem !important;
+    line-height: 3rem !important;
+  }
+
+  .ngb-dp-weekday {
+    width: 3rem !important;
+  }
+}
+
+.ngb-dp-day {
+  width: 6rem !important;
+  height: 4rem !important;
+}
+
+.ngb-dp-day > div {
+  width: 6rem !important;
+  height: 4rem !important;
+  line-height: 4rem !important;
+}
+
+.ngb-dp-weekday {
+  width: 6rem !important;
+}

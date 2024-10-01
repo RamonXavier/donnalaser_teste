@@ -74,3 +74,42 @@ a .iconesSociais {
     display: none;
   }
 }
+
+.verification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.vcode {
+  display: flex;
+  gap: 10px;
+}
+
+.vcode-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.verify-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.verify-button:hover {
+  background-color: #0056b3;
+}

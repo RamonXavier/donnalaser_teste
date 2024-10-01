@@ -1,5 +1,5 @@
 <div class="">
-  <div class="row rowTextoSolto">
+  <!-- <div class="row rowTextoSolto">
     <div class="col-8 p-5">
       <span class="textoSolto">
         Que bom te ver aqui, vamos
@@ -16,9 +16,9 @@
       fetchpriority="high"
       class="logoReduzida">
     </div>
-  </div>
+  </div> -->
   <div class="row">
-    <div class="col-8 p-0">
+    <div class="col-12 p-0">
       <div class="col-12 form-2-wrapper">
         <div class="logo">
           <h2>Agendamento de avaliação</h2>
@@ -26,47 +26,52 @@
         <h5 class="mb-4">Informe seus dados de acesso</h5>
         <form action="#">
           <div class="row">
-            <div class="col-10">
+            <div class="col-12">
               <div class="mb-3 form-box">
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" required>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12">
               <div class="mb-3 form-box">
-                <input type="number" class="form-control" id="cpf" name="cpf" placeholder="CPF" required>
+                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF" required>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12">
               <div class="mb-3 form-box">
                 <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone/WhatsApp" required>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12">
               <div class="mb-3 form-box">
                 <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required>
               </div>
             </div>
           </div>
+          <!-- <hr> -->
           <div class="row">
-            <div class="col-7 mb-3">
-              <ngb-datepicker
+            <div class="col-12 d-flex justify-content-center mb-3">
+
+              <ngb-datepicker #dp [(ngModel)]="model" class="calendario" (navigate)="date = $event.next" />
+
+              <!-- <ngb-datepicker
               [displayMonths]="displayMonths"
               [navigation]="navigation"
               [showWeekNumbers]="showWeekNumbers"
-              [outsideDays]="outsideDays"/>
+              [outsideDays]="outsideDays"/> -->
             </div>
-            <div class="col-5" style="max-height: 260px; overflow-y: auto;">
+            <div class="col-12" style="max-height: 260px; overflow-y: auto;">
               <div *ngFor="let teamSale of exemplos" class="pb-2">
-                <span>Horário: <b>{{teamSale.name}}</b> - {{teamSale.population}}</span>
+                <span> <b>{{teamSale.name}} - {{teamSale.dia}}</b> <br> {{teamSale.population}}</span>
+                <hr>
               </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-outline-secondary login-btn w-100 mb-3">Ir para agendamentos</button>
+          <button type="submit" class="btn btn-outline-secondary login-btn w-100 mb-3">Agendar</button>
           <app-sociaisFooter></app-sociaisFooter>
         </form>
 
         <p class="text-center register-test mt-3">
-          <a href="register-3.html" class="text-decoration-none">Aindão não é cliente? <b>Agende uma avaliação</b></a>
+          <a href="register-3.html" class="text-decoration-none">Voltar para <b>Login</b></a>
         </p>
       </div>
     </div>
