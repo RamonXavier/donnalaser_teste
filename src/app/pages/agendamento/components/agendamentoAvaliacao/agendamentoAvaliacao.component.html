@@ -52,12 +52,6 @@
             <div class="col-12 d-flex justify-content-center mb-3">
 
               <ngb-datepicker #dp [(ngModel)]="model" class="calendario" (navigate)="date = $event.next" />
-
-              <!-- <ngb-datepicker
-              [displayMonths]="displayMonths"
-              [navigation]="navigation"
-              [showWeekNumbers]="showWeekNumbers"
-              [outsideDays]="outsideDays"/> -->
             </div>
             <div class="col-12" style="max-height: 260px; overflow-y: auto;">
               <div *ngFor="let teamSale of exemplos" class="pb-2">
